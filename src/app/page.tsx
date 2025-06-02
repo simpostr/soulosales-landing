@@ -1,3 +1,4 @@
+"use client";
 // Prelaunch Landing Page with Glassmorphism and Dark Purple Gradient Theme
 import React from "react";
 import { Input } from "@/components/ui/input";

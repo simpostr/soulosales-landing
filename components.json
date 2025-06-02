@@ -11,11 +11,11 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "sol/components",
-    "utils": "sol/lib/utils",
-    "ui": "sol/components/ui",
-    "lib": "sol/lib",
-    "hooks": "sol/hooks"
+    "components": "@/components", // <-- Change this from "sol/components"
+    "utils": "@/lib/utils",       // <-- Change this from "sol/lib/utils"
+    "ui": "@/components/ui",      // <-- Change this from "sol/components/ui"
+    "lib": "@/lib",               // <-- Change this from "sol/lib"
+    "hooks": "@/hooks"    
   },
   "iconLibrary": "lucide"
 }
