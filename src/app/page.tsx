@@ -65,7 +65,13 @@ export default function PrelaunchLandingPage() {
   );
 }
 
-function FeatureCard({ icon, title, desc }) {
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+}
+
+function FeatureCard({ icon, title, desc }: FeatureCardProps) {
   return (
     <Card className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-md hover:shadow-lg transition-all">
       <CardContent className="p-6 space-y-4 text-center">
