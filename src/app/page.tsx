@@ -59,8 +59,7 @@ export default function PrelaunchLandingPage() {
 
       {/* Footer */}
       <footer className="text-center mt-32 text-white/50 text-sm">
-        &copy; {new Date().getFullYear()} SouloSales. All rights reserved.
-      </footer>
+              </footer>
     </div>
   );
 }
