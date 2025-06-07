@@ -11,10 +11,10 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "@/components", // <-- Change this from "sol/components"
-    "utils": "@/lib/utils",       // <-- Change this from "sol/lib/utils"
-    "ui": "@/components/ui",      // <-- Change this from "sol/components/ui"
-    "lib": "@/lib",               // <-- Change this from "sol/lib"
+    "components": "@/components", 
+    "utils": "@/lib/utils",       
+    "ui": "@/components/ui",      
+    "lib": "@/lib",               
     "hooks": "@/hooks"    
   },
   "iconLibrary": "lucide"
