@@ -26,10 +26,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        // Use the Geist font classes here if you intend to use them
-        className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}
-        // If you're NOT using Geist fonts, uncomment this line or just use `<body>`
-        // className="antialiased"
+        className={`
+          ${GeistSans.variable}
+          ${GeistMono.variable}
+          antialiased
+          bg-gradient-to-br from-indigo-900 via-purple-900 to-black  // <--- ADD THESE CLASSES
+          min-h-screen                                          // <--- ADD THIS CLASS to ensure body stretches
+        `}
       >
         {children}
         <SharedFooter />
