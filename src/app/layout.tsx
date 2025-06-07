@@ -32,3 +32,29 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  title: 'SouloSales - See Every Sale. One Dashboard.',
+  description: 'Track live deals and countdowns from your favorite brands. Vendors list your sales, shoppers never miss a drop.',
+  icons: {
+    icon: '/favicon.ico', // Ensure you have a favicon.ico in src/app/
+    apple: '/apple-icon.png', // Optional: for Apple devices
+  },
+  };
+
+  export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      {/* If you're using a font like Inter: */}
+      {/* <body className={inter.className}> */}
+      <body>
+        {children}
+        <SharedFooter /> {/* Include your shared footer here */}
+      </body>
+    </html>
+  );
+}
