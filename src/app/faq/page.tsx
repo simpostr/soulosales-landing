@@ -12,19 +12,19 @@ export default function FAQPage() {
     },
     {
       question: "How do I get notified about sales?",
-      answer: "Simply enter your email on our homepage and select 'I'm a Shopper'. We'll send you updates and exclusive access once the full platform launches!"
+      answer: "Simply enter your email on our homepage and select 'I&apos;m a Shopper'. We&apos;ll send you updates and exclusive access once the full platform launches!"
     },
     {
       question: "I'm a business. How can I list my sales?",
-      answer: "Select 'I'm a Vendor' on our homepage and submit your email. We'll send you details on how to join our vendor network and start showcasing your deals to our community."
+      answer: "Select &apos;I&apos;m a Vendor&apos; on our homepage and submit your email. We&apos;ll send you details on how to join our vendor network and start showcasing your deals to our community."
     },
     {
       question: "When will SouloSales fully launch?",
-      answer: "We're currently in pre-launch mode, optimizing the platform for the best experience. Sign up for our waitlist, and you'll be the first to know the official launch date!"
+      answer: "We&apos;re currently in pre-launch mode, optimizing the platform for the best experience. Sign up for our waitlist, and you&apos;ll be the first to know the official launch date!"
     },
     {
       question: "Is SouloSales free to use?",
-      answer: "For shoppers, SouloSales will always be free. For vendors, we'll have competitive pricing models to ensure maximum value for your listings, details of which will be shared with our registered vendors."
+      answer: "For shoppers, SouloSales will always be free. For vendors, we&apos;ll have competitive pricing models to ensure maximum value for your listings, details of which will be shared with our registered vendors."
     }
   ];
 

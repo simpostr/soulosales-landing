@@ -41,8 +41,8 @@ export default function PrelaunchLandingPage() {
             name="userType"
             className="backdrop-blur-md bg-white/10 border border-white/20 text-white px-4 py-2 rounded-md"
           >
-            <option value="shopper">I’m a Shopper</option>
-            <option value="vendor">I’m a Vendor</option>
+            <option value="shopper">I&apos;m a Shopper</option>
+            <option value="vendor">I&apos;m a Vendor</option>
           </select>
           <Button type="submit" className="bg-purple-600 hover:bg-purple-700">
             Notify Me

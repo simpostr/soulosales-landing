@@ -20,7 +20,7 @@ export default function SuccessPage() {
         transition={{ delay: 0.3, duration: 0.6 }}
         className="text-lg text-white/80 max-w-xl mx-auto mb-8"
       >
-        Please check your inbox for a confirmation email. Click the link inside to verify your email address. Once confirmed, you'll be among the first to know when SouloSales officially launches!
+        Please check your inbox for a confirmation email. Click the link inside to verify your email address. Once confirmed, you&apos;ll be among the first to know when SouloSales officially launches!
       </motion.p>
       <Link href="/" className="text-purple-400 hover:underline">
         Back to Home

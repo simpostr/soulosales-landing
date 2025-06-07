@@ -25,9 +25,9 @@ export default function VendorInterestPage() {
       </motion.p>
 
       <div className="space-y-4 mb-10 max-w-2xl mx-auto">
-        <h2 className="text-2xl font-semibold text-purple-300">What's Next?</h2>
+        <h2 className="text-2xl font-semibold text-purple-300">What&apos;s Next?</h2>
         <p className="text-white/70">
-          We've received your inquiry. Keep an eye on your inbox! We'll send you a detailed email shortly explaining how to:
+          We&apos;ve received your inquiry. Keep an eye on your inbox! We&apos;ll send you a detailed email shortly explaining how to:
         </p>
         <ul className="list-disc list-inside text-left mx-auto text-white/70">
           <li>List your products and sales events seamlessly.</li>
