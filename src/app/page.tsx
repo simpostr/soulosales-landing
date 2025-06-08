@@ -1,99 +1,83 @@
-'use client'; // This component needs to be a Client Component
-
-import React, { useState } from 'react';
-import { Button } from "@/components/ui/button";
+"use client";
+// Prelaunch Landing Page with Glassmorphism and Dark Purple Gradient Theme
+import React from "react";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { Sparkles, Clock, Store } from "lucide-react";
 
-// Make sure your radio group or similar input is structured correctly to capture 'userType'
-// This example assumes you have a way to get userType from the form,
-// or you can explicitly set it based on the radio button selection.
-
-export default function PrelaunchLandingPage() { // Or whatever your component name is
-  const [selectedUserType, setSelectedUserType] = useState('shopper'); // Default to 'shopper'
-
-  const handleUserTypeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedUserType(event.target.value);
-  };
-
-  // You can keep your existing handleSubmit if you have one, or use Formspree's action directly
-  // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
-  //   // Your existing form submission logic
-  //   // For redirection, you can use:
-  //   // if (selectedUserType === 'shopper') {
-  //   //   window.location.href = 'https://your-domain.com/success';
-  //   // } else {
-  //   //   window.location.href = 'https://your-domain.com/vendor-interest';
-  //   // }
-  // };
-
+export default function PrelaunchLandingPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-white">
-      {/* ... Your existing logo, headline, and subheadline ... */}
+    <div className="min-h-screen w-full bg-gradient-to-br from-purple-900 via-indigo-900 to-black text-white p-6">
+      {/* Hero Section */}
+      <section className="max-w-4xl mx-auto text-center space-y-6 pt-24">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-300 via-pink-400 to-indigo-400"
+        >
+          See Every Sale. One Dashboard.
+        </motion.h1>
+        <p className="text-lg text-white/80 max-w-xl mx-auto">
+          Track live deals and countdowns from your favorite brands. Vendors list your sales, shoppers never miss a drop.
+        </p>
 
-      <Card className="w-[380px] bg-white/10 border-white/20 text-white shadow-lg">
-        <CardHeader>
-          <CardTitle className="text-white text-center">Join Our Waitlist</CardTitle>
-          <CardDescription className="text-white/70 text-center">
-            Be the first to know when we launch!
-          </CardDescription>
-        </CardHeader>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-          <CardContent className="space-y-4">
-            <Input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Enter your email"
-              required
-              className="bg-white/10 border-white/30 text-white placeholder-white/60 focus:ring-purple-500"
-            />
-            <div className="flex justify-center space-x-4">
-              <label className="flex items-center space-x-2 text-white/80">
-                <Input
-                  type="radio"
-                  name="userType"
-                  value="shopper"
-                  checked={selectedUserType === 'shopper'}
-                  onChange={handleUserTypeChange}
-                  className="form-radio text-purple-600 focus:ring-purple-500"
-                />
-                <span>I&apos;m a Shopper</span>
-              </label>
-              <label className="flex items-center space-x-2 text-white/80">
-                <Input
-                  type="radio"
-                  name="userType"
-                  value="vendor"
-                  checked={selectedUserType === 'vendor'}
-                  onChange={handleUserTypeChange}
-                  className="form-radio text-purple-600 focus:ring-purple-500"
-                />
-                <span>I&apos;m a Vendor</span>
-              </label>
-            </div>
-            {/* Hidden redirect inputs based on selected type */}
-            {selectedUserType === 'shopper' && (
-              <input type="hidden" name="_redirect" value="https://soulosales.com/success" />
-            )}
-            {selectedUserType === 'vendor' && (
-              <input type="hidden" name="_redirect" value="https://soulosales.com/vendor-interest" />
-            )}
-          </CardContent>
-          <CardFooter className="flex justify-center">
-            <Button
-              type="submit"
-              className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300"
-            >
-              {selectedUserType === 'shopper' ? 'Notify Me' : 'Next Steps'}
-            </Button>
-          </CardFooter>
+        {/* Signup Form */}
+        <form
+          action="https://formspree.io/f/mpwdejbg"
+          method="POST"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6"
+        >
+          <Input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            className="backdrop-blur-md bg-white/10 border border-white/20 placeholder-white/60 text-white"
+            required
+          />
+          <select
+            name="userType"
+            className="backdrop-blur-md bg-white/10 border border-white/20 text-white px-4 py-2 rounded-md"
+          >
+            
+<option value="shopper">I&apos;m a Shopper</option>
+            <option value="vendor">I&apos;m a Vendor</option>
+          </select>
+          <Button type="submit" className="bg-purple-600 hover:bg-purple-700">
+            Notify Me
+          </Button>
         </form>
-      </Card>
+      </section>
 
-      {/* ... Your three feature cards ... */}
+      {/* Features Section */}
+      <section className="max-w-5xl mx-auto mt-32 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <FeatureCard icon={<Sparkles size={32} />} title="Live Countdowns" desc="See when sales start and end in real-time." />
+        <FeatureCard icon={<Store size={32} />} title="Vendor Listings" desc="Brands list their own deals to reach more buyers." />
+        <FeatureCard icon={<Clock size={32} />} title="Never Miss Out" desc="Join the waitlist to get early alerts on new drops." />
+      </section>
 
-    </main>
+      {/* Footer */}
+      <footer className="text-center mt-32 text-white/50 text-sm">
+              </footer>
+    </div>
   );
 }
+
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+}
+
+function FeatureCard({ icon, title, desc }: FeatureCardProps) {
+  return (
+    <Card className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-md hover:shadow-lg transition-all">
+      <CardContent className="p-6 space-y-4 text-center">
+        <div className="flex justify-center text-purple-400">{icon}</div>
+        <h3 className="text-xl font-semibold text-white">{title}</h3>
+        <p className="text-white/70">{desc}</p>
+      </CardContent>
+    </Card>
+  );
