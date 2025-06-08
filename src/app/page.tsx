@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge"; // Ensure Badge is available
 
 // Make sure your radio group or similar input is structured correctly to capture 'userType'
 // This example assumes you have a way to get userType from the form,
