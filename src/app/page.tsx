@@ -81,3 +81,4 @@ function FeatureCard({ icon, title, desc }: FeatureCardProps) {
       </CardContent>
     </Card>
   );
+}
