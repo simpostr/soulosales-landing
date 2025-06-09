@@ -30,7 +30,7 @@ export default function RootLayout({
           ${GeistSans.variable}
           ${GeistMono.variable}
           antialiased
-    bg-gradient-to-br from-gray-950 via-gray-900 to-black  
+    bg-gradient-to-br from-pink-900 via-purple-900 to-orange-900 
     min-h-screen                                          // <--- ADD THIS CLASS to ensure body stretches
         `}
       >
