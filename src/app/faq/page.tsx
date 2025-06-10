@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/accordion"; // Ensure these are imported
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import SharedFooter from '@/components/SharedFooter'; // Assuming you still want this footer
 
 export default function FAQPage() {
   const faqItems = [

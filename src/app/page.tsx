@@ -6,7 +6,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Sparkles, Clock, Store, User, Briefcase, ChevronDown } from "lucide-react"; // Added User, Briefcase, ChevronDown
 import Link from 'next/link'; // Import Link for internal navigation
-import SharedFooter from '@/components/SharedFooter'; // Ensure SharedFooter is imported
 
 export default function HomePage() { // Renamed from PrelaunchLandingPage for clarity
   // Define your feature cards data here
