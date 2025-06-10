@@ -55,7 +55,7 @@ export default function FAQPage() {
         <>
           SouloSales is an online repository of deals from across the internet. Think of our website as a digital sheet of paper that transports you to the store of your liking in order for you to initiate and complete a purchase. In the event of an issue with your purchase, you will need to contact the vendor directly.
           <br /><br />
-          For issues pertaining to the services we offer (incorrect pricing, inaccuracies regarding remaining time left for an item's sale, misleading details, etc.), please contact us at [your phone number] or [your support email].
+          For issues pertaining to the services we offer (incorrect pricing, inaccuracies regarding remaining time left for an item&apos;s sale, misleading details, etc.), please contact us at [your phone number] or [your support email].
         </>
       )
     },
