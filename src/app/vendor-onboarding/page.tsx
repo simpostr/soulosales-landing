@@ -11,7 +11,7 @@ export default function VendorOnboardingPage() {
   // IMPORTANT: Replace this with your specific Formspree form ID for Vendor emails
   const VENDOR_FORMSPREE_ID = "xovwezll"; // <<< CHANGE THIS
   // IMPORTANT: Replace with your actual live domain or Vercel URL
-  const BASE_URL = "https://www.soulosales.com"; // <<< CHANGE THIS
+  const BASE_URL = "https://soulosales-landing.vercel.app/"; // <<< CHANGE THIS
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-pink-900 via-purple-900 to-orange-900 text-white p-6 flex flex-col items-center justify-center">

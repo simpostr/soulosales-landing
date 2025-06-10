@@ -17,16 +17,16 @@ export default function VendorSuccessPage() {
         <h2 className="text-3xl font-semibold text-white mb-4">What Happens Next?</h2>
         <ul className="list-disc list-inside text-lg text-white/70 text-left space-y-3">
           <li>
-            **Email Verification:** Please check your inbox for a verification email. Click the link to confirm your address.
+            Email Verification: Please check your inbox for a verification email. Click the link to confirm your address.
           </li>
           <li>
-            **Next Steps Email:** Once verified, we&apos;ll send you a detailed email with instructions on how to set up your SouloSales vendor account and start listing your products.
+            Further Directions: Once verified, our team will reach out with instructions on how to set up your SouloSales vendor account and start listing your products.
           </li>
           <li>
-            **Dedicated Support:** Our team will be available to guide you through the process.
+            Dedicated Support: Our team will be available to guide you through the vetting and setup process, as well as provide answers to any additional questions you may have.
           </li>
           <li>
-            **Get Ready to Sell:** Prepare to reach a wider audience of eager shoppers!
+            Get Ready to Sell: Prepare to reach a wider audience of eager shoppers!
           </li>
         </ul>
         <Link href="/" passHref>

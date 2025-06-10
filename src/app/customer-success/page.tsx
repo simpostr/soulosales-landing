@@ -17,13 +17,13 @@ export default function CustomerSuccessPage() {
         <h2 className="text-3xl font-semibold text-white mb-4">What Happens Next?</h2>
         <ul className="list-disc list-inside text-lg text-white/70 text-left space-y-3">
           <li>
-            **Email Verification:** Please check your inbox for a verification email. Click the link to confirm your address.
+            Email Verification: Please check your inbox for a verification email. Click the link to confirm your address.
           </li>
           <li>
-            **Early Access & Alerts:** Once verified, you&apos;ll be on our VIP list for exclusive deal alerts and early access to the SouloSales platform launch!
-          </li>
+            Early Access & Alerts: Once verified, you&apos;ll be on our VIP list to get notified the moment our site launches.
+          </li> 
           <li>
-            **Get Ready to Save:** Prepare to discover amazing discounts from your favorite brands.
+            Get Ready to Save: Prepare to discover amazing discounts from your favorite brands.
           </li>
         </ul>
         <Link href="/" passHref>
