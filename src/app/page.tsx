@@ -107,8 +107,6 @@ export default function HomePage() { // Renamed from PrelaunchLandingPage for cl
         ))}
       </section>
 
-      {/* Shared Footer component (moved out of the main div for proper positioning) */}
-      <SharedFooter />
     </div>
   );
 }

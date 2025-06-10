@@ -121,8 +121,7 @@ export default function FAQPage() {
         </Accordion>
       </section>
 
-      {/* Shared Footer component */}
-      <SharedFooter />
+      
     </div>
   );
 }
