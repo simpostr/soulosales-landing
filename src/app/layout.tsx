@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 // If not, you should use `Inter` or remove font imports and className from body
 import { GeistSans } from 'geist/font/sans'; // Correct import for GeistSans
 import { GeistMono } from 'geist/font/mono'; // Correct import for GeistMono
-
 import "./globals.css";
 import SharedFooter from '@/components/SharedFooter'; // Make sure this path is correct
 
@@ -17,12 +16,11 @@ export const metadata: Metadata = {
   },
 };
 
-// 2. ONLY ONE RootLayout default export
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
       <body
@@ -33,7 +31,8 @@ export default function RootLayout({
     bg-gradient-to-br from-pink-900 via-purple-900 to-orange-900 
     min-h-screen                                          // <--- ADD THIS CLASS to ensure body stretches
         `}
-      >
+      > 
+       <div className="flex-grow"></div>
         {children}
         <SharedFooter />
       </body>
