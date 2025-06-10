@@ -31,16 +31,16 @@ export default function CustomerOnboardingPage() {
             <h3 className="text-2xl font-semibold text-white">Our Simple Process:</h3>
             <ol className="list-decimal list-inside space-y-2">
               <li>
-                **Enter Your Email Below:** Provide your primary email address.
+                Enter Your Email Below: Provide your primary email address.
               </li>
               <li>
-                **Verify Your Email:** We&apos;ll send a quick verification link to confirm your email.
+                Verify Your Email: We&apos;ll send a quick verification link to confirm your email.
               </li>
               <li>
-                **Get Early Access:** Once verified, you&apos;ll be on our VIP list for early access and exclusive deal alerts!
+                Get Early Access: Once verified, you&apos;ll be on our VIP list for early access and exclusive deal alerts!
               </li>
               <li>
-                **Start Saving:** Discover incredible discounts as soon as we launch.
+                Start Saving: Discover incredible discounts as soon as we launch.
               </li>
             </ol>
           </div>

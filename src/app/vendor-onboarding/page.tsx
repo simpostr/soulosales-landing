@@ -9,7 +9,7 @@ import Link from 'next/link'; // Import Link for back button
 
 export default function VendorOnboardingPage() {
   // IMPORTANT: Replace this with your specific Formspree form ID for Vendor emails
-  const VENDOR_FORMSPREE_ID = "mpwdejbg"; // <<< CHANGE THIS
+  const VENDOR_FORMSPREE_ID = "xovwezll"; // <<< CHANGE THIS
   // IMPORTANT: Replace with your actual live domain or Vercel URL
   const BASE_URL = "https://www.soulosales.com"; // <<< CHANGE THIS
 
@@ -31,16 +31,15 @@ export default function VendorOnboardingPage() {
             <h3 className="text-2xl font-semibold text-white">Our Simple Process:</h3>
             <ol className="list-decimal list-inside space-y-2">
               <li>
-                **Enter Your Email Below:** Provide your primary contact email.
+                Enter Your Email Below: Provide your primary contact email.
               </li>
               <li>
-                **Verify Your Email:** We&apos;ll send a quick verification link to ensure your email is valid.
+                Verify Your Email: We&apos;ll send a quick verification link to ensure your email is valid.
               </li>
               <li>
-                **Receive Next Steps:** Once verified, we&apos;ll send you an email with details on setting up your vendor profile and listing your first sales!
-              </li>
+                Receive Next Steps: Once verified, we&apos;ll contact you with more information about how SouloSales for Enterprise works, the benefits of joining SouloSales as a business, and the additional benefits of signing up before we launch </li>
               <li>
-                **Start Selling:** Connect with eager shoppers looking for amazing deals.
+                Start Selling: Connect with eager shoppers looking for amazing deals.
               </li>
             </ol>
           </div>

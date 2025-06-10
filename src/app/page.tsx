@@ -59,7 +59,7 @@ export default function HomePage() { // Renamed from PrelaunchLandingPage for cl
               Showcase your deals to a targeted audience of eager shoppers. Learn how to list your sales and grow your brand.
             </p>
             <Button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg text-lg">
-              Partner With Us
+              Join Launchlist 
             </Button>
           </motion.div>
         </Link>
@@ -79,7 +79,7 @@ export default function HomePage() { // Renamed from PrelaunchLandingPage for cl
               Discover incredible deals, track sales, and never miss out on discounts from your favorite brands.
             </p>
             <Button className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-lg text-lg">
-              Find My Deals
+              Join Shortlist
             </Button>
           </motion.div>
         </Link>
