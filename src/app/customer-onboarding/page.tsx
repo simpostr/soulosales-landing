@@ -37,7 +37,7 @@ export default function CustomerOnboardingPage() {
                 Verify Your Email: We&apos;ll send a quick verification link to confirm your email.
               </li>
               <li>
-                Get Early Access: Once verified, you&apos;ll be on our VIP list for early access and exclusive deal alerts!
+                Get Early Access: Once verified, you&apos;ll be on our VIP list to get notified the moment our site launches.
               </li>
               <li>
                 Start Saving: Discover incredible discounts as soon as we launch.
